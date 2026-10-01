@@ -1,0 +1,23 @@
+body{
+font-family:Arial;
+background:#f4f6f8;
+text-align:center;
+}
+
+.container{
+background:white;
+padding:40px;
+width:500px;
+margin:auto;
+margin-top:100px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+button{
+background:#007BFF;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+}

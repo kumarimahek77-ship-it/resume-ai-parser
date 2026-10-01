@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Resume Parser</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Resume Parser</h1>
+
+<form method="POST" enctype="multipart/form-data">
+
+<input type="file" name="resume" required>
+
+<button type="submit">Analyze Resume</button>
+
+</form>
+
+{% if result %}
+
+<h2>Resume Analysis</h2>
+
+<p><b>Name:</b> {{result.name}}</p>
+<p><b>Email:</b> {{result.email}}</p>
+<p><b>Phone:</b> {{result.phone}}</p>
+<p><b>Skills:</b> {{result.skills}}</p>
+<p><b>Education:</b> {{result.education}}</p>
+
+<h3>Resume Score: {{result.score}}%</h3>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
